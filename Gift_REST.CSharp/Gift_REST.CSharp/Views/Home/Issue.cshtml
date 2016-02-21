@@ -1,0 +1,92 @@
+﻿@model Gift_REST.CSharp.Models.PaymentResponse
+
+@{
+    ViewBag.Title = "Issue";
+}
+
+<div class="container">
+
+    <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+        <h2>Gift Issue Response Details</h2>
+        <table class="table thumbnail">
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.CmdStatus)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CmdStatus)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.TextResponse)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.TextResponse)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.AcctNo)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AcctNo)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.AuthCode)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AuthCode)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.RefNo)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.RefNo)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Purchase)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Purchase)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Authorize)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Authorize)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Balance)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Balance)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+            <div class="">
+                <input type="button" class="btn btn-buy" onclick="location.href='/Home';" value="Home" />
+            </div>
+        </div>
+    </div>
+
+</div>
